@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/780072bd6c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="GridContainer">
+        <aside>
+            <div class="logo">
+                <i class="fa-solid fa-book fa-2xl"></i>
+                <span>Library</span>
+            </div>
+            <input type="text" name="title" id="title" placeholder="title">
+            <input type="text" name="author" id="author" placeholder="author">
+            <input type="number" name="n_pages" id="n_pages" placeholder="number of pages">
+            <div>
+                <label for="read">Read Before</label>
+                <input type="checkbox" name="read" id="read">
+            </div>
+            <button type="button" id="record">Record</button>
+        </aside>
+        <div class="main">
+            <header class="display">
+                <div>
+                    <label for="n_read">Books Read : </label>
+                    <output id="n_read"></output>
+                </div>
+                <div>
+                    <label for="n_unread">Books Unread :</label>
+                    <output id="n_unread"></output>
+                </div>
+            </header>
+            <table class="Library">
+                <thead>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Read Before</th>
+                </thead>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>
